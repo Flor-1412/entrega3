@@ -1,0 +1,90 @@
+
+$espacio-vertical: 20px;
+$espacio-horizontal: 20px;
+
+
+header {
+    background-color: map-get($colores, primario);
+    padding: $espacio-vertical $espacio-horizontal;
+    text-align: center;
+
+    h1 {
+        color: map-get($colores, texto);
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            display: inline;
+            margin-right: 20px;
+
+            a {
+                text-decoration: none;
+                color: map-get($colores, texto);
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+main {
+    section#productos {
+        text-align: center;
+        margin-top: $espacio-vertical;
+
+        h2 {
+            color: map-get($colores, texto);
+            margin-bottom: $espacio-vertical;
+        }
+
+        .producto {
+            display: inline-block;
+            margin: 0 $espacio-horizontal $espacio-vertical;
+
+            h3 {
+                color: map-get($colores, texto);
+            }
+
+            .producto-imagen {
+                border-radius: 5px;
+                margin-bottom: $espacio-vertical;
+            }
+
+            .producto-precio {
+                color: map-get($colores, texto);
+                margin-bottom: $espacio-vertical;
+            }
+
+            .producto-boton {
+                background-color: map-get($colores, boton);
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+
+                &:hover {
+                    background-color: darken(map-get($colores, boton), 10%);
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background-color: map-get($colores, primario);
+    padding: $espacio-vertical $espacio-horizontal;
+    text-align: center;
+
+    p, h3 {
+        color: map-get($colores, texto);
+        margin-bottom: $espacio-vertical;
+    }
+}

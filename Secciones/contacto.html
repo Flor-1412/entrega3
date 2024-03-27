@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Ropa para Niños</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="contacto.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">Contacto - Ropa para Niños</h1>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="../index.html" class="nav__link">Inicio</a></li>
+                <li class="nav__item"><a href="productos.html" class="nav__link">Productos</a></li>
+                <li class="nav__item"><a href="iniciodesesion.html" class="nav__link">Inicio de Sesión</a></li>
+                <li class="nav__item"><a href="contacto.html" class="nav__link">Contacto</a></li>
+                <li class="nav__item"><a href="cerrarsesion.html" class="nav__link">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <h2 class="main__title">Contáctanos</h2>
+        <p class="main__description">Si tienes alguna pregunta o comentario, no dudes en contactarnos:</p>
+        <form action="enviar.php"  method="post" class="form">
+            <label for="nombre" class="form__label">Nombre:</label>
+            <input type="text" placeholder="Escribe tu nombre" id="nombre" name="nombre" class="form__input" required><br>
+            <label for="email" class="form__label">Email:</label>
+            <input type="email" placeholder="Escribe tu correo electrónico" id="email" name="email" class="form__input" required><br>
+            <label for="mensaje" class="form__label">Mensaje:</label>
+            <textarea id="mensaje" placeholder="Deja tu mensaje aquí" name="mensaje" class="form__textarea" rows="4" required></textarea><br>
+            <button type="submit" class="form__button">Enviar Mensaje</button>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p>Contacto: info@ropaparaninos.com</p>
+        <p>Síguenos en redes sociales:</p>
+        <h3>Ropa de bebes - @ropadebebes</h3>
+    </footer>
+</body>
+</html>

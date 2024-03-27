@@ -1,0 +1,156 @@
+$color-primario: #ffccff; 
+$color-secundario: #e6ccff; 
+$color-texto: #000; 
+
+body {
+    background-color: $color-primario;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+    h1 {
+        text-align: center;
+        color: $color-texto; 
+        padding: 20px 0;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+
+        li {
+            display: inline;
+            margin-right: 20px;
+
+            a {
+                text-decoration: none;
+                color: $color-texto; 
+            }
+        }
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .clase3 {
+        color: $color-texto; 
+        text-align: center;
+        margin-bottom: 10px; 
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 20px;
+        padding: 20px;
+    }
+
+    section {
+        background-color: $color-secundario;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+        h2 {
+            color: $color-primario;
+            text-align: center;
+            color: $color-texto; 
+            margin-bottom: 10px; 
+        }
+
+        .producto, .oferta, .testimonio, .contacto {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 2px solid $color-primario;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+
+            img {
+                border-radius: 10px;
+                margin-bottom: 10px;
+            }
+
+            h3 {
+                color: $color-texto; 
+                margin-bottom: 10px; 
+            }
+
+            p {
+                color: $color-texto; 
+                margin-bottom: 10px; 
+            }
+
+            button {
+                background-color: $color-primario;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+
+                &:hover {
+                    background-color: darken($color-primario, 10%);
+                }
+            }
+        }
+
+        .contacto form {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 10px;
+            width: fit-content;
+            margin: 0 auto;
+
+            label {
+                font-weight: bold;
+                color: $color-texto; 
+            }
+
+            input[type="text"],
+            input[type="email"],
+            textarea {
+                width: 100%;
+                padding: 10px;
+                border-radius: 5px;
+                border: 2px solid $color-texto; 
+            }
+
+            textarea {
+                height: 100px;
+            }
+
+            button[type="submit"] {
+                background-color: $color-primario;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+
+                &:hover {
+                    background-color: darken($color-primario, 10%);
+                }
+            }
+        }
+    }
+}
+
+
+footer {
+    background-color: $color-primario;
+    padding: 20px;
+    text-align: center;
+
+    p, h3 {
+        color: $color-texto; 
+        margin-bottom: 10px; 
+    }
+}

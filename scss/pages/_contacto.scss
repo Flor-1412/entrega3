@@ -1,0 +1,55 @@
+
+.header {
+    background-color: map-get($colores, primario);
+  
+    &__title {
+      color: map-get($colores, texto);
+      padding: map-get($espaciado, padding-header) 0;
+    }
+  
+    .nav {
+        &__list {
+          &__item {
+            &__link {
+          
+            }
+          }
+        }
+      }
+
+    }
+      
+  
+  .main {
+    &__title,
+    &__description {
+      color: map-get($colores, texto);
+    }
+  
+    .form {
+      margin: map-get($espaciado, margin-form) 0;
+  
+      &__label {
+        color: map-get($colores, texto);
+      }
+  
+      &__input,
+      &__textarea {
+        border-color: map-get($colores, texto);
+      }
+  
+      &__button {
+        background-color: map-get($colores, boton);
+      }
+    }
+  }
+  
+  .footer {
+    background-color: map-get($colores, primario);
+    padding: map-get($espaciado, padding-footer);
+  
+    &__title,
+    &__description {
+      color: map-get($colores, texto);
+    }
+  }

@@ -1,0 +1,60 @@
+main {
+    h2 {
+        color: map-get($colores, texto);
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    form {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 15px;
+        margin-top: 20px;
+        text-align: center;
+
+        label {
+            color: map-get($colores, texto);
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            padding: 10px;
+            border-radius: 5px;
+            border: 2px solid map-get($colores, texto);
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        button[type="submit"] {
+            background-color: map-get($colores, boton);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 100%;
+            box-sizing: border-box;
+
+            &:hover {
+                background-color: darken(map-get($colores, boton), 10%);
+            }
+        }
+    }
+}
+
+footer {
+    background-color: map-get($colores, primario);
+    color: map-get($colores, texto);
+    text-align: center;
+    padding: 20px;
+
+    p {
+        margin-bottom: 10px;
+    }
+
+    h3 {
+        margin-top: 0;
+    }
+}

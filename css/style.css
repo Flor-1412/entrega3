@@ -1,0 +1,337 @@
+body {
+  background-color: #ffccff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body h1 {
+  text-align: center;
+  color: #000;
+  padding: 20px 0;
+}
+body nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+body nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+body nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .clase3 {
+  color: #000;
+  text-align: center;
+  margin-bottom: 10px;
+}
+main .grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+}
+main section {
+  background-color: #e6ccff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+main section h2 {
+  color: #ffccff;
+  text-align: center;
+  color: #000;
+  margin-bottom: 10px;
+}
+main section .producto, main section .oferta, main section .testimonio, main section .contacto {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 2px solid #ffccff;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+main section .producto img, main section .oferta img, main section .testimonio img, main section .contacto img {
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+main section .producto h3, main section .oferta h3, main section .testimonio h3, main section .contacto h3 {
+  color: #000;
+  margin-bottom: 10px;
+}
+main section .producto p, main section .oferta p, main section .testimonio p, main section .contacto p {
+  color: #000;
+  margin-bottom: 10px;
+}
+main section .producto button, main section .oferta button, main section .testimonio button, main section .contacto button {
+  background-color: #ffccff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+main section .producto button:hover, main section .oferta button:hover, main section .testimonio button:hover, main section .contacto button:hover {
+  background-color: #ff99ff;
+}
+main section .contacto form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  width: fit-content;
+  margin: 0 auto;
+}
+main section .contacto form label {
+  font-weight: bold;
+  color: #000;
+}
+main section .contacto form input[type=text],
+main section .contacto form input[type=email],
+main section .contacto form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #000;
+}
+main section .contacto form textarea {
+  height: 100px;
+}
+main section .contacto form button[type=submit] {
+  background-color: #ffccff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+main section .contacto form button[type=submit]:hover {
+  background-color: #ff99ff;
+}
+
+footer {
+  background-color: #ffccff;
+  padding: 20px;
+  text-align: center;
+}
+footer p, footer h3 {
+  color: #000;
+  margin-bottom: 10px;
+}
+
+header {
+  background-color: #ffccff;
+  padding: 20px 20px;
+  text-align: center;
+}
+header h1 {
+  color: #333;
+}
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+header ul li {
+  display: inline;
+  margin-right: 20px;
+}
+header ul li a {
+  text-decoration: none;
+  color: #333;
+}
+header ul li a:hover {
+  text-decoration: underline;
+}
+
+main section#productos {
+  text-align: center;
+  margin-top: 20px;
+}
+main section#productos h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+main section#productos .producto {
+  display: inline-block;
+  margin: 0 20px 20px;
+}
+main section#productos .producto h3 {
+  color: #333;
+}
+main section#productos .producto .producto-imagen {
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+main section#productos .producto .producto-precio {
+  color: #333;
+  margin-bottom: 20px;
+}
+main section#productos .producto .producto-boton {
+  background-color: #ff6666;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+main section#productos .producto .producto-boton:hover {
+  background-color: #ff3333;
+}
+
+footer {
+  background-color: #ffccff;
+  padding: 20px 20px;
+  text-align: center;
+}
+footer p, footer h3 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+main h2 {
+  color: #333;
+  text-align: center;
+  margin-top: 30px;
+}
+main form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 15px;
+  margin-top: 20px;
+  text-align: center;
+}
+main form label {
+  color: #333;
+  font-weight: bold;
+}
+main form input[type=text],
+main form input[type=password] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #333;
+  width: 100%;
+  box-sizing: border-box;
+}
+main form button[type=submit] {
+  background-color: #ff6666;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+  box-sizing: border-box;
+}
+main form button[type=submit]:hover {
+  background-color: #ff3333;
+}
+
+footer {
+  background-color: #ffccff;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+footer p {
+  margin-bottom: 10px;
+}
+footer h3 {
+  margin-top: 0;
+}
+
+.header {
+  background-color: #ffccff;
+}
+.header__title {
+  color: #333;
+  padding: 20px 0;
+}
+.main__title, .main__description {
+  color: #333;
+}
+.main .form {
+  margin: 20px 0;
+}
+.main .form__label {
+  color: #333;
+}
+.main .form__input, .main .form__textarea {
+  border-color: #333;
+}
+.main .form__button {
+  background-color: #ff6666;
+}
+
+.footer {
+  background-color: #ffccff;
+  padding: 20px;
+}
+.footer__title, .footer__description {
+  color: #333;
+}
+
+.header {
+  text-align: center;
+  background-color: #ffccff;
+  color: #333;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.header .nav {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+.header .nav__item {
+  margin-right: 20px;
+}
+.header .nav__item__link {
+  text-decoration: none;
+  color: #333;
+}
+
+.main {
+  background-color: #e6ccff;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+}
+.main .main__title {
+  color: #333;
+  padding: 10px;
+}
+.main .main__button {
+  background-color: #ff6666;
+  color: white;
+  border: 2px;
+  padding: 10px 3%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.main .main__button:hover {
+  background-color: #ff3333;
+}
+
+.footer {
+  background-color: #ffccff;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
